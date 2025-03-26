@@ -1,18 +1,179 @@
 @charset "UTF-8";
 
+/*  
+#3e342b
+#ffc874
+#d4a053
+#101010
+*/
+
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+body{
+    background-color: #d4a053;
+    color: #101010da;
+    font-weight: 400px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding: 2rem;
+    background-color: #3e342b;
+    color: #ffc874;
+    text-align: center;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+section > h2{
+    font-size: 1.2em;
+}
+
+input[type= "radio"], input[type="checkbox"]{
+    accent-color: #3d2917 ;
+}
+
+input[type= "text"], input[type="password"], input[type="date"], input[type="email"]{
+    width: 50%;
+    padding: 0.6rem;
+    border: 2px solid #ffc874;
+    border-radius: 15px;
+    outline: none;
+    background-color: #473d2e;
+    color: white;
+    
+}
+
+input[type="file"]{
+    width: 20%;
+    padding: 0.3rem;
+    border: 2px solid #ffc874;
+    border-radius: 15px;
+    background-color: #473d2e;
+    color: white;
+}
+
+
+input::placeholder{
+    color: white;
+}
+
+select{
+    cursor: pointer;
+    background-color: #473d2e;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    width: 150px;
+    height: 25px;
+}
+
 img{
     width: 250px;
     height: 250px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #473d2e;
+    color: white;
+    padding: 0.7rem;
+}
+
+td{
+    color: #22140a;
+    padding: 0.7rem;
+    text-align: center;
 }
 
 td, th{
     border: 1px solid black;
 }
 
-tfoot > td{
+tfoot td{
     text-align: center;
+    background-color: #ffa927;
+}
+
+details{
+    background-color: #473d2e;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+summary{
+    color: white;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+ol{
+    margin-left: 1.5rem;
+    color: white;
+}
+
+li{
+    padding: 0.2rem;
+}
+
+fieldset{
+    border: 2px solid #473d2e;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend{
+    color: #22140a;
+    padding: 0 0.5rem;
+}
+
+textarea{
+    background-color: #473d2e;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ffc874;
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+button{
+    background-color:#f3c888;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+footer{
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    
 }
